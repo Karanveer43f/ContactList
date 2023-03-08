@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+#baap {
+  text-align: center;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+#hed {
+  display: flex;
+}
+
+#page-heading {
+  position: relative;
+  left: 25px;
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 3.5rem;
+  background-color: rgb(173, 214, 201);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.listDiv {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.lis {
+  font-family: sans-serif;
+  color: white;
+  background-color: rgb(34, 113, 113);
+  font-weight: bold;
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin: 5px 0px;
+  align-items: center;
+}
+.lise {
+  font-family: sans-serif;
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.lis:hover {
+  background-color: rgb(165, 200, 190);
+  color: rgb(59, 33, 33);
+}
+.lise:hover {
+  background-color: rgb(165, 200, 190);
+  color: rgb(59, 33, 33);
+}
+
+.lis a{
+  color: white;
+}
+
+#sub {
+  background-color: grey;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  /* border: 5 px solid grey;
+   */
+  height: 2.5rem;
+  border: 0;
+}
+
+#sub:hover {
+  background-color: rgb(226, 219, 219);
+  color: gray;
+}
+
+#insideForm {
+  left: 18px;
+  width: 488px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+#insideForm input {
+  border: 0;
+  border-bottom: 2px solid gray;
+}

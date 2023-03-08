@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+
+    <div id="baap">
+        <div id="hed">
+            <!-- <i class="fa-solid fa-address-book"></i> -->
+            <h1 id="page-heading"><i class="fa-solid fa-address-book"></i> Contact List</h1>
+        </div>
+
+        <div class="listDiv">
+
+            <ul class="theList">
+                <% for(let i of contact_list){ %>
+
+                    <li class="lis">
+
+                        <div class="lise">
+
+                            <p>
+                                <%= i.personName %>
+                            </p>
+                            <p>
+                                <%= i.number %>
+                            </p>
+                        </div>
+                        <div>
+                            <a href="/delete-contact/?id=<%= i._id %>">
+                                <i class="fas fa-window-close"></i>
+                            </a>
+                        </div>
+                    </li>
+                    <%} %>
+            </ul>
+        </div>
+
+
+        <form action="/create-contact" method="POST">
+            <div id="insideForm">
+
+                <input type="text" name="personName" placeholder="Enter Name:">
+                <input type="number" name="number" placeholder="Enter Number:">
+
+                <button type="submit" id="sub">Add Contact</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/8c59b3954d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
